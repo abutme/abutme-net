@@ -1,0 +1,25 @@
+date: 2014-02-18 17:45:55.060
+argv: node C:\Users\liukui\AppData\Roaming\npm\node_modules\hexo\bin\hexo deploy
+os: Windows_NT 6.1.7601 win32 x64
+version:
+  hexo: 2.4.5
+  http_parser: 1.0
+  node: 0.10.25
+  v8: 3.14.5.9
+  ares: 1.9.0-DEV
+  uv: 0.10.23
+  zlib: 1.2.3
+  modules: 11
+  openssl: 1.0.1e
+---
+
+[debug] 17:45:54.870 Configuration file load successfully
+[debug] 17:45:54.877 Version info checked successfully
+[debug] 17:45:54.941 Loading database.
+[debug] 17:45:55.027 Plugin loaded successfully: hexo-generator-feed
+[info] 17:45:55.031 Start deploying: github
+[info] 17:45:55.039 Setting up GitHub deployment...
+[error] 17:45:55.050 Error: spawn ENOENT
+Error: spawn ENOENT
+    at errnoException (child_process.js:988:11)
+    at Process.ChildProcess._handle.onexit (child_process.js:779:34)
