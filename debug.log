@@ -1,5 +1,5 @@
-date: 2014-02-21 16:23:00.474
-argv: node C:\Users\liukui\AppData\Roaming\npm\node_modules\hexo\bin\hexo server
+date: 2014-02-21 16:34:26.290
+argv: node C:\Users\liukui\AppData\Roaming\npm\node_modules\hexo\bin\hexo generate
 os: Windows_NT 6.1.7601 win32 x64
 version:
   hexo: 2.4.5
@@ -13,65 +13,30 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 16:14:35.260 Configuration file load successfully
-[debug] 16:14:35.265 Version info checked successfully
-[debug] 16:14:35.409 Plugin loaded successfully: hexo-generator-feed
-[debug] 16:14:35.440 Theme layout loaded
-[debug] 16:14:35.444 Theme configuration loaded
-[debug] 16:14:35.451 Processed: CNAME
-[debug] 16:14:35.452 Processed: images/apprenticeship.jpg
-[debug] 16:14:35.459 Theme source loaded
-[debug] 16:14:35.463 Theme language files loaded
-[debug] 16:14:35.480 Processed: reading/index.md
-[debug] 16:14:35.494 Processed: _posts/reading.md
-[debug] 16:14:35.494 Processed: _posts/博客开张.md
-[debug] 16:14:35.494 Processed: _posts/阅读-软件开发者路线图.md
-[debug] 16:14:35.507 Cache saved
-[info] 16:14:35.538 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
-[debug] 16:14:40.415 Render page: reading/index.html
-[debug] 16:14:42.420 Render page: reading/index.html
-[update] 16:17:24.381 Theme: source\css\_base\variable.styl
-[update] 16:17:24.395 Theme: source\css\_base\variable.styl
-[debug] 16:17:33.072 Render page: reading/index.html
-[debug] 16:17:35.227 Render index: 
-[debug] 16:17:37.359 Render index: 
-[debug] 16:17:40.534 Render index: 
-[update] 16:18:22.932 Source: _posts\reading.md
-[delete] 16:18:22.936 Source: _posts\reading.md
-[create] 16:18:22.942 Source: reading\reading.md
-[create] 16:18:22.943 Source: reading\reading.md
-[debug] 16:18:23.055 Processed: _posts/reading.md
-[debug] 16:18:23.061 Processed: reading/reading.md
-[debug] 16:18:23.062 Processed: reading/reading.md
-[debug] 16:18:23.065 Cache saved
-[debug] 16:18:25.414 Render index: 
-[debug] 16:18:27.628 Render page: reading/index.html
-[debug] 16:18:32.721 Render page: reading/index.html
-[update] 16:20:07.582 Source: images\apprenticeship.jpg
-[delete] 16:20:07.588 Source: images\apprenticeship.jpg
-[debug] 16:20:07.703 Processed: images/apprenticeship.jpg
-[debug] 16:20:07.705 Cache saved
-[create] 16:21:55.621 Source: _posts\read.md
-[create] 16:21:55.624 Source: _posts\read.md
-[debug] 16:21:55.752 Processed: _posts/read.md
-[debug] 16:21:55.753 Processed: _posts/read.md
-[debug] 16:21:55.757 Cache saved
-[update] 16:22:10.634 Source: _posts\read.md
-[delete] 16:22:10.637 Source: _posts\read.md
-[debug] 16:22:10.762 Processed: _posts/read.md
-[debug] 16:22:10.764 Cache saved
-[info] 16:22:36.344 addDir Source: %s read
-[info] 16:22:36.347 addDir Source: %s read
-[create] 16:22:36.349 Source: read\index.md
-[create] 16:22:36.351 Source: read\index.md
-[debug] 16:22:36.456 Processed: read
-[debug] 16:22:36.456 Processed: read
-[debug] 16:22:36.459 Processed: read/index.md
-[debug] 16:22:36.460 Processed: read/index.md
-[debug] 16:22:36.461 Cache saved
-[debug] 16:22:43.517 Render page: read/index.html
-[delete] 16:23:00.439 Source: read\index.md
-[info] 16:23:00.442 unlinkDir Source: %s read
-[update] 16:23:00.446 Source: read\index.md
-[error] 16:23:00.449 Error: ENOENT, readdir 'D:\GitHub\abutme-net\source\read'
-Error: ENOENT, readdir 'D:\GitHub\abutme-net\source\read'
+[debug] 16:34:25.641 Configuration file load successfully
+[debug] 16:34:25.646 Version info checked successfully
+[debug] 16:34:25.709 Loading database.
+[debug] 16:34:25.799 Plugin loaded successfully: hexo-generator-feed
+[debug] 16:34:26.006 Theme layout loaded
+[debug] 16:34:26.013 Theme configuration loaded
+[debug] 16:34:26.046 Processed: reading/index.md
+[debug] 16:34:26.050 Processed: CNAME
+[debug] 16:34:26.084 Theme source loaded
+[debug] 16:34:26.087 Theme language files loaded
+[debug] 16:34:26.108 Processed: _posts/博客开张.md
+[debug] 16:34:26.108 Processed: _posts/阅读-软件开发者路线图.md
+[debug] 16:34:26.153 Cache saved
+[info] 16:34:26.182 Files loaded in 0.379s
+[debug] 16:34:26.238 Render archive: archives/
+[debug] 16:34:26.239 Render archive: archives/2014/
+[debug] 16:34:26.239 Render archive: archives/2014/02/
+[debug] 16:34:26.239 Render category: categories/阅读/
+[debug] 16:34:26.239 Render index: 
+[debug] 16:34:26.239 Render page: reading/index.html
+[debug] 16:34:26.239 Render post: 2014/02/21/阅读-软件开发者路线图/
+[debug] 16:34:26.239 Render post: 2014/02/18/博客开张/
+[debug] 16:34:26.239 Render tag: tags/其他/
+[debug] 16:34:26.239 Render tag: tags/职业/
+[debug] 16:34:26.265 Public folder cleared: archives\index.html,archives\2014\index.html,archives\2014\02\index.html,categories\阅读\index.html,index.html,reading\index.html,2014\02\21\阅读-软件开发者路线图\index.html,2014\02\18\博客开张\index.html,tags\其他\index.html,tags\职业\index.html,CNAME,fancybox\blank.gif,fancybox\fancybox_loading.gif,fancybox\fancybox_loading@2x.gif,fancybox\fancybox_overlay.png,fancybox\fancybox_sprite.png,fancybox\fancybox_sprite@2x.png,fancybox\jquery.fancybox.css,fancybox\jquery.fancybox.pack.js,js\gallery.js,js\jquery.imagesloaded.min.js,css\style.css,css\font\fontawesome-webfont.eot,css\font\fontawesome-webfont.svg,css\font\fontawesome-webfont.ttf,css\font\fontawesome-webfont.woff,read,atom.xml
+[error] 16:34:26.283 Error: ENOENT, open 'D:\GitHub\abutme-net\source\read'
+Error: ENOENT, open 'D:\GitHub\abutme-net\source\read'
