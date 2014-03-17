@@ -42,7 +42,7 @@ git是windows 8风格的，很简约，已经够用了。
 
 	$ hexo server
 
-启动web server，提示`4000`端口打开。
+启动web server，提示`4000`端口打开（可以通过-p选项指定其他端口号）。
 
 在浏览器敲入[http://localhost:4000](http://localhost:4000)
 就可以看到hexo默认提供的主题和Hello World了。
