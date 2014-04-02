@@ -76,7 +76,7 @@ error_log(print_r($gzDeflateFtr,true),3,'/tmp/xxy');
 
 实践得出以下结论：
 
-> 1. curl默认是返回普通文本的，需要加header设置和参数`CURLOPT_BINARYTRANSFER`
+> 1. curl只要设置了`CURLOPT_ENCODING`选项，就会自动gzip decode，测试时不设置就可以看原始gzip返回。在shell命令行下curl，可以通过-H参数参看raw数据
 
 > 2. gzencode/gzcompress/gzdeflate压缩算法是一致的，即CM=8的DEFLATE算法
 
