@@ -20,33 +20,33 @@ autoload机制的类图关系如下（只做示意）：
 
 注意到，AutoloaderFactory的特点：
 
-1）抽象类，猜测原因是避免实例化再调用的方式；
+> 1. 抽象类，猜测原因是避免实例化再调用的方式；
 
-2）StandardAutoloader的loader机制一定会被注册；
+> 2. StandardAutoloader的loader机制一定会被注册；
 
-3）维护loader的单例，支持loader的注销；
+> 3. 维护loader的单例，支持loader的注销；
 
-4）支持多autoload机制，允许用户自定义autoload机制；
+> 4. 支持多autoload机制，允许用户自定义autoload机制；
 
-5）Loader的异常类都是直接require，而不会递归autoload；
+> 5. Loader的异常类都是直接require，而不会递归autoload；
 
 `StandardAutoloader`是基于文件查找的支持命名空间（namespaces）和前缀（prefixes）的类加载机制，zf2不推荐include_path的查找机制，不过还是提供了不被推荐的`fallback autoloader`的选项。
 
-1）`namespaces`的机制是根据`命名空间+类名`建立和文件路径的对应关系，`Zend`命名空间的核心类就是以这种方式被autoload的；
+> 1. `namespaces`的机制是根据`命名空间+类名`建立和文件路径的对应关系，`Zend`命名空间的核心类就是以这种方式被autoload的；
 
-2）`prefixes`的机制相当于建立5.3以前不支持namespace的类命名和路径的部署关系；
+> 2. `prefixes`的机制相当于建立5.3以前不支持namespace的类命名和路径的部署关系；
 
-3）根据类名所包括的分隔符种类来进行模式选择的，对于指定了fallback标识的会查找include_path；
+> 3. 根据类名所包括的分隔符种类来进行模式选择的，对于指定了fallback标识的会查找include_path；
 
-4）标准的autoload实际是利用类名和文件路径和命名的规范对应，并`没有缓存机制`。
+> 4. 标准的autoload实际是利用类名和文件路径和命名的规范对应，并`没有缓存机制`。
 
 `ClassMapAutoloader`设计的则是从性能出发，它建立类名和文件的映射关系，加载过一次的类直接从map中就可以找到。为此ZF提供了`classmap_generator.php`工具用于自动建立map对应关系。
 
-1）支持运行时手动配置和map文件静态配置；
+> 1. 支持运行时手动配置和map文件静态配置；
 
-2）适用于应用比较频繁的类，最好是数量较稳定的类；
+> 2. 适用于应用比较频繁的类，最好是数量较稳定的类；
 
-3）在实际上线部署中增加类以后map文件同步更新会有问题；
+> 3. 在实际上线部署中增加类以后map文件同步更新会有问题；
 
 `ModuleAutoloader`是为`Module`准备的，在接下来的学习中再来补充。
 
