@@ -1,6 +1,10 @@
 title: 让iterator改变php传统编码
 date: 2014-05-14 16:59:43
-tags:
+tags: 
+- iterator
+- 设计模式
+- 数据库
+category: 编码
 ---
 
 设计模式里有个迭代器模式，该模式是依赖Iterator接口的。php5开始支持内置的Iterator接口，有java编码经验的应该对java.util下的iterator不陌生。
@@ -269,16 +273,6 @@ foreach($features as $feature){
 ```php
 
 app表：
-+----+-------+-----------+--------------+
-| id | appid | featureid | featurename  |
-+----+-------+-----------+--------------+
-|  1 | 2     | 1         | ocr          |
-|  2 | 2     | 2         | image search |
-|  3 | 2     | 3         | bar code     |
-|  4 | 2     | 4         | web search   |
-+----+-------+-----------+--------------+
-
-feature表：
 +----+-------+----------+
 | id | appid | appname  |
 +----+-------+----------+
@@ -289,6 +283,17 @@ feature表：
 |  5 | 5     | weibo    |
 |  6 | 6     | qqmusic  |
 +----+-------+----------+
+
+feature表：
++----+-------+-----------+--------------+
+| id | appid | featureid | featurename  |
++----+-------+-----------+--------------+
+|  1 | 2     | 1         | ocr          |
+|  2 | 2     | 2         | image search |
+|  3 | 2     | 3         | bar code     |
+|  4 | 2     | 4         | web search   |
++----+-------+-----------+--------------+
+
 
 ```
 
@@ -310,7 +315,7 @@ featureid: 4    featurename: web search
 
 ```
 
-可以看到iterator的写法很有意思，相比传统编码这种方式的优势如前述。
+可以看到iterator的写法很有意思，在没有真正用features时，是不会查询数据库和创建对象的。
 
 当然测试代码还不是最优的，因为有sql语句的硬编码，还有创建语句都可以从中分离出来。
 
