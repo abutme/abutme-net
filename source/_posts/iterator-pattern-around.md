@@ -4,7 +4,6 @@ tags:
 - iterator
 - 设计模式
 - 数据库
-- 迭代器模式
 category: 编码
 ---
 
