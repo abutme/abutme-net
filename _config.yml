@@ -96,5 +96,5 @@ markdown:
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy: 
-  type: github
-  repository: https://github.com/abutme/abutme.github.io.git
+  type: git
+  repo: https://github.com/abutme/abutme.github.io.git
