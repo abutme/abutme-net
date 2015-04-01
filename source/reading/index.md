@@ -5,6 +5,8 @@ date: 2014-02-21 14:56:24
 
 ## 在读
 
+<img src="/images/tcp-ip-illustrated.jpg" alt="TCP/IP详解 卷1：协议" width="300" />
+
 <img src="/images/deep-into-nginx.jpg" alt="深入理解Nginx：模块开发与架构" width="300" />
 
 <img src="http://img3.douban.com/lpic/s1106991.jpg" alt="Data Structures and Algorithm Analysis in C:Second Edition" width="300" />
@@ -14,6 +16,8 @@ date: 2014-02-21 14:56:24
 
 
 ## 读过
+
+<img src="http://img3.douban.com/lpic/s27868522.jpg" alt="Wireshark is easy" width="300" />
 
 <img src="http://img3.douban.com/lpic/s4261122.jpg" alt="PHP Objects, Patterns, and Practice" width="300" />
 
